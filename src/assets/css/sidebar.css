@@ -427,10 +427,10 @@ flex-grow: 1;  }
 
   /*........Template 2 .........*/
 
-  .sidebar[data-template="S2"] .nav a i {
+  .sidebar[data-template="S2"] .nav > li > a > i {
     margin-right: 0px;
   }
-  .sidebar[data-template="S2"] .nav a span {
+  .sidebar[data-template="S2"] .nav > li > a > span {
     position: absolute;
     left: 150%;
     background: white !important;
@@ -441,7 +441,7 @@ flex-grow: 1;  }
     transition: width 500ms;
     pointer-events: none;
   }
-  .sidebar[data-template="S2"] .nav li:hover > a span {
+  .sidebar[data-template="S2"] .nav > li:hover > a > span {
     opacity: 1;
   }
 

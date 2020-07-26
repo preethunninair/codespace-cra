@@ -40,7 +40,7 @@ function Sidebar(props) {
         if (menuItem.submenu.length > 0) {
           if (templateConfig.submenuConfig === "DSM") {
             return (
-              <UncontrolledDropdown nav>
+              <UncontrolledDropdown nav direction="right">
                 <DropdownToggle
                   caret
                   color="default"

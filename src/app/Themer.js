@@ -21,15 +21,16 @@ function Themer(props) {
   let topnavLinkColorStyling = "";
   let sidenavLinkTextColorStyling = "";
   if (topnavLinkTextColor !== undefined) {
-    topnavLinkColorStyling += `.navbar .navbar-nav.page-nav li a:not(.dropdown-item) > span,
- .navbar .navbar-nav.page-nav li a:not(.dropdown-item) > i {
+    topnavLinkColorStyling += `.wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item) > span,
+ .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item) > i {
    color: ${topnavLinkTextColor} !important;
  }`;
   }
 
   if (topnavActiveLinkBgColor !== undefined) {
     topnavActiveLinkStyling += `
-      .navbar .navbar-collapse .navbar-nav.page-nav .nav-link.active,.navbar .navbar-collapse .navbar-nav.page-nav .nav-link:hover{
+      .wrapper[data-codespace="TRUE"] .navbar .navbar-collapse .navbar-nav.page-nav .nav-link.active,
+      .wrapper[data-codespace="TRUE"] .navbar .navbar-collapse .navbar-nav.page-nav .nav-link:hover{
         background:${topnavActiveLinkBgColor} !important;
       
       }`;
@@ -37,12 +38,12 @@ function Themer(props) {
   if (topnavActiveLinkTextColor !== undefined) {
     topnavActiveLinkStyling += `
      
-    .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > span,
-     .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > i,
-     .navbar .navbar-nav.page-nav li a:not(.dropdown-item):focus > span,
-     .navbar .navbar-nav.page-nav li a:not(.dropdown-item):focus > i,
-     .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > span,
-     .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > i{
+    .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > span,
+     .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > i,
+     .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item):focus > span,
+     .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item):focus > i,
+     .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > span,
+     .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > i{
         color:${topnavActiveLinkTextColor} !important;
       }
       `;
@@ -50,45 +51,53 @@ function Themer(props) {
 
   if (topnavActiveLinkIconColor !== undefined) {
     topnavActiveLinkStyling += `
-    .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > i,
-    .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > i{
+    .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > i,
+    .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > i{
         color:${topnavActiveLinkIconColor} !important;
       }
       `;
   } else if (topnavActiveLinkTextColor !== undefined) {
     topnavActiveLinkStyling += `
-    .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > i,
-    .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > i{
+    .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item):hover > i,
+    .wrapper[data-codespace="TRUE"] .navbar .navbar-nav.page-nav li a:not(.dropdown-item).active > i{
         color:${topnavActiveLinkTextColor} !important;
       }
       `;
   }
   if (sidenavLinkTextColor !== undefined) {
-    sidenavLinkTextColorStyling += `.sidebar .nav li > a p,
-.sidebar .nav li > a i,
-.sidebar .nav li > a{
+    sidenavLinkTextColorStyling += `.wrapper[data-codespace="TRUE"] .sidebar .nav li > a span,
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a i,
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a{
   color: ${sidenavLinkTextColor} !important;
 }`;
   }
   if (sidenavActiveLinkBgColor !== undefined) {
-    sidenavActiveLinkStyling += `.sidebar .nav li > a.active,.sidebar .nav li > a:hover{
+    sidenavActiveLinkStyling += `
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a:hover,
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a.active{
         background:${sidenavActiveLinkBgColor} !important;
       
       }`;
   }
   if (sidenavActiveLinkTextColor !== undefined) {
-    sidenavActiveLinkStyling += `.sidebar .nav li > a.active p,.sidebar .nav li > a:hover p{
+    sidenavActiveLinkStyling += `
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a:hover span,
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a.active span{
         color:${sidenavActiveLinkTextColor} !important;
       }
       `;
   }
 
   if (sidenavActiveLinkIconColor !== undefined) {
-    sidenavActiveLinkStyling += `.sidebar .nav li > a.active i,.sidebar .nav li > a:hover i{
+    sidenavActiveLinkStyling += `
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a:hover i,
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a.active i{
         color:${sidenavActiveLinkIconColor} !important;
       }`;
   } else if (sidenavActiveLinkTextColor !== undefined) {
-    sidenavActiveLinkStyling += `.sidebar .nav li > a.active i,.sidebar .nav li > a:hover i{
+    sidenavActiveLinkStyling += `
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a:hover i,
+    .wrapper[data-codespace="TRUE"] .sidebar .nav li > a.active i{
         color:${sidenavActiveLinkTextColor} !important;
       }`;
   }
