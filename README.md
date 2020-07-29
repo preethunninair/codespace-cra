@@ -1,6 +1,12 @@
 # CODESPACE CRA
 
-Now kick start Your React based project with an **Inbuilt Layout & Page Editor** designed to create flexible Admin Dashboard's.
+Now kick start your React + Bootstrap based project with an **Inbuilt Layout & Page Editor** designed to create flexible Admin Dashboard's.This is a React setup with a strong emphasis on developer experience and application performance.
+<br>
+<p>
+  CODESPACE CRA uses <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="https://webpack.github.io/docs/">Webpack</a>,<a href="https://github.com/twbs/bootstrap">Bootstrap</a>,  <a href="https://reactstrap.github.io/">Reactstrap</a> for rapid application development.
+</p>
+
+<hr />
 
 ## Table of Contents
 
