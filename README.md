@@ -1,8 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CODESPACE CRA
+
+Now kick start Your React based project with an **Inbuilt Layout & Page Editor** designed to create flexible Admin Dashboard's.
+
+## Table of Contents
+
+
+* [Quick Start](#quick-start)
+* [Available Scripts](#available-scripts)
+* [Browser Support](#browser-support)
+* [Licensing](#licensing)
+
+
+## Quick start
+
+
+1. Make sure you have the latest version of Node locally installed.
+2. Run the below command:
+```
+npx create-react-app [your-app-name] --template cra-template-codespace
+```
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm run codespace`
+
+Runs the app in the development mode along with codespace UI builder<br />
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
 ### `npm start`
 
@@ -66,3 +93,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## Browser Support
+
+At present, last two versions of the following browsers are supported:
+
+<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
+
+## Licensing
+
+- Copyright 2020 preethunninair
+- Licensed under MIT (https://github.com/preethunninair/codespace-cra/blob/master/LICENSE)
+
+Linkedin: <https://www.linkedin.com/in/preeth-unni-nair-12554b37>
+
+
+
