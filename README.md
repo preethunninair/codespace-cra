@@ -106,7 +106,7 @@ At present, last two versions of the following browsers are supported:
 - Copyright 2020 preethunninair
 - Licensed under MIT (https://github.com/preethunninair/codespace-cra/blob/master/LICENSE)
 
-Linkedin: <https://www.linkedin.com/in/preeth-unni-nair-12554b37>
+LinkedIn: <https://www.linkedin.com/in/preeth-unni-nair-12554b37>
 
 
 
