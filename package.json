@@ -1,20 +1,42 @@
 {
-  "name": "codespace-cra",
+  "name": "cra-template-codespace",
   "version": "0.1.0",
   "private": true,
+  "main": "template.json",
+  "files": ["template", "template.json"],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
+    "history": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
+    "redux-promise-middleware": "^6.1.2",
+    "redux-thunk": "^2.3.0",
+    "tinycolor2": "^1.4.1",
+    "codespace": "preethunninair/codespace"
   },
   "scripts": {
     "start": "react-scripts start",
+    "codespace_ui": "start  http://localhost:5000 && serve -s ./node_modules/codespace/build",
+    "codespace_engine": "node ./node_modules/codespace/codespace.js",
+    "codespace": "concurrently \"npm run codespace_engine\" \"npm run codespace_ui\" \"npm run start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src",
+"copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public",
+"prepublishOnly": "yarn clean-files && yarn copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"

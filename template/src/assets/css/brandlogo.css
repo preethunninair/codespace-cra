@@ -1,0 +1,14 @@
+.brand-img{
+    padding:10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.brand-img[data-theme="dark"]{
+    color:white;
+}
+.brand-img[data-theme="light"]{
+    color:black;
+}

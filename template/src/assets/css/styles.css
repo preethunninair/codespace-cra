@@ -1,0 +1,15 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@import "customslider.css";
+@import "custommodal.css";
+@import "customcard.css";
+/* @import "whitecontent.css"; */
+@import "appLayout.css";
+
+
+@import "sidebar.css";
+@import "customnavbar.css";
+@import "brandlogo.css";
+@import "customstyle.css";
+@import "customform.css";
+@import "customdropdown.css";
