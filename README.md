@@ -1,3 +1,5 @@
+# **NOTE: THE PROJECT IS IN ALPHA PHASE**
+
 # CODESPACE CRA
 
 Now kick start your React + Bootstrap based project with an **Inbuilt Layout & Page Editor** designed to create flexible Admin Dashboard's.This is a React setup with a strong emphasis on developer experience and application performance.With the **codespace layout editor** you can change the application layout and theme in infinite possible ways.
